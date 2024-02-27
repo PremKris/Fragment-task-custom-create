@@ -1,0 +1,35 @@
+<!-- FOR CREATE DIALOGUE BOX DESIGN XML -->
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" >
+<Dialog id="_IDDialog"
+ title="Plant details">
+        <VBox id="vbox1">
+        <HBox> 
+            <Label for="plant" showColon="true" text="PLANT" />
+            <Input id="plant" text='plant' editable="false"/>
+            
+        </HBox>
+        <HBox>
+            <Label for="sbu" showColon="true" text="SBU" />
+            <Input id="sbu" text='SBU' />
+        </HBox>
+        <HBox>
+            <Label for="sbg" showColon="true" text="SBG" />
+            <Input id="sbg" text='SBG'/>
+        </HBox>
+        <HBox>
+            <Button
+            core:require="{ handler:'project1/ext/fragment/CreateFragmentJs'}"
+			text="Save"
+			press="handler.save"
+			class="sapUiSmallMarginBottom"
+			ariaHasPopup="Dialog" />
+            <Button
+            core:require="{ handler:'project1/ext/fragment/CreateFragmentJs'}"
+			text="Cancel"
+			press="handler.cancell"
+			class="sapUiSmallMarginBottom"
+			ariaHasPopup="Dialog" />
+        </HBox>
+        </VBox>
+</Dialog>
+</core:FragmentDefinition>
