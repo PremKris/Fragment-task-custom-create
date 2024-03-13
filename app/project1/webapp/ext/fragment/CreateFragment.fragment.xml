@@ -1,7 +1,7 @@
 <!-- FOR CREATE DIALOGUE BOX DESIGN XML -->
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" >
 <Dialog id="_IDDialog"
- title="Plant details">
+ title="Plant details" class="sapUiContentPadding">
         <VBox id="vbox1">
         <HBox> 
             <Label for="plant" showColon="true" text="PLANT" />

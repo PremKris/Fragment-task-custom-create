@@ -20,7 +20,7 @@ sap.ui.define([
                     debugger
                     // Handle success
                     console.log(data);
-                    oEvent.oSource.getParent().getParent().getParent().close()
+                    oEvent.oSource.getParent().getParent().getParent().close()//For closing the pop up
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     // Handle error
